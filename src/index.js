@@ -44,12 +44,12 @@ var startGameHandlers = Alexa.CreateStateHandler(states.STARTMODE, {
         this.emit('NewSession'); // Uses the handler in newSessionHandlers
     },
     'AMAZON.HelpIntent': function() {
-        var message = 'Ich denke an eine Zahl zwischen Null und Hundert, versuche sie zu erraten. Ich sage dir dann ob sie' +
+        var message = 'Ich denke an eine Zahl zwischen Null und Zehn, versuche sie zu erraten. Ich sage dir dann ob sie' +
             ' größer oder kleiner ist. Willst du das Spiel starten?';
         this.emit(':ask', message, message);
     },
     'AMAZON.YesIntent': function() {
-        this.attributes["guessNumber"] = Math.floor(Math.random() * 100);
+        this.attributes["guessNumber"] = Math.floor(Math.random() * 10);
         this.handler.state = states.GUESSMODE;
         this.emit(':ask', 'Super! ' + 'Sag eine Nummer um das Spiel zu starten.', 'Sag eine Nummer.');
     },
