@@ -1,4 +1,6 @@
 NumberGuessIntent {number}
-NumberGuessIntent is it {number}
-NumberGuessIntent how about {number}
-NumberGuessIntent could it be {number}
+NumberGuessIntent ist es {number}
+NumberGuessIntent wie wäre es mit {number}
+NumberGuessIntent könnte es die {number} sein
+NumberGuessIntent ich tippe auf die {number}
+NumberGuessIntent ich sage {number}
